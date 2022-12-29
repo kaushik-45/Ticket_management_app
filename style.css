@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont>*{
+    margin-left: 4rem;
+    border-radius: 4px;
+}
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    background-color:brown;
+    display: flex;
+  
+}
+
+.action-btn-cont>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-size: 2rem;
+   width: 50%;
+   color: beige;
+}
+
+.add-btn:hover{
+    background-color: darkkhaki;
+}
+.remove-btn:hover{
+    background-color: darkkhaki;
+}
+.color{
+    height: 1.5rem;
+    width: 3rem;
+    background-color: lightcoral;
+    border-radius: 2px;
+    
+}
+.lightpink{
+    background-color: lightpink;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.black{
+    background-color: black;
+}
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;
+    top: calc((100vh - 50vh)/2);
+    left: calc((100vw - 45vw)/2);
+    display: none;
+
+}
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #d2dae2;
+    resize: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.priority-color-cont{
+    height: 100%;
+    width: 25%;
+    background-color:#4b4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.priority-color{
+    height: 3rem;
+    width: 55%;
+    
+}
+.border{
+    border: 5px solid #d1d8e0;
+}
+
+.ticket-cont{
+    height: 13rem;
+    width: 16rem;
+    background-color:#f1f2f6
+}
+.ticket-color{
+    height: 2rem;
+    
+}
+.ticket-id{
+    height: 2rem;
+    padding: 0.4rem;
+}
+.task-area{
+    height: calc(100% - 1rem - 2rem - 2rem);
+    outline: none;
+    padding: 1.4rem;
+}
+.ticket-lock{
+    height: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #a5b1c2;
+}
+.main-cont{
+    display: flex;
+   flex-wrap: wrap;
+   padding: 2rem;
+   gap: 2rem;  
+}
+
+@media screen and (min-width:425px) and (max-width:768px)
+{
+   .modal-cont{
+    width: 60vw;
+    left: calc((100vw - 60vw)/2);
+   }
+}
+    
+
